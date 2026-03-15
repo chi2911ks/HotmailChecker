@@ -18,7 +18,7 @@ email|password|refresh_token|client_id
 * Live accounts will be exported to a text file
 
 **Contact:**
-* Email: [EMAIL_ADDRESS]
+* Email: chi2911bs@gmail.com
 * Telegram: @Azawaki
 
 **Disclaimer:**
