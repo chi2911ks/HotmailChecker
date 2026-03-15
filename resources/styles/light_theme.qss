@@ -1,0 +1,178 @@
+/* =========================================================
+   Hotmail Checker - Premium Soft Crystal Theme
+   Design: Modern, Clean, Apple-esque
+   Color Palette: Pure White, Crystal Blue, Soft Slate
+========================================================= */
+
+/* ── Globals ─────────────────────────────────────────── */
+QWidget {
+    background-color: #f9fafb;
+    color: #1f2937;
+    font-family: "Segoe UI Variable Text", "Inter", -apple-system, sans-serif;
+    font-size: 13px;
+    selection-background-color: #dbeafe;
+    selection-color: #1e40af;
+}
+
+QWidget:disabled {
+    color: #9ca3af;
+    background-color: #f3f4f6;
+}
+
+/* ── Main Window & Containers ─────────────────────────── */
+QMainWindow {
+    background-color: #f9fafb;
+}
+
+/* ── Inputs ──────────────────────────────────────────── */
+QLineEdit, QSpinBox, QComboBox {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+QLineEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border: 1px solid #3b82f6;
+    background-color: #ffffff;
+}
+
+QLineEdit:hover, QSpinBox:hover, QComboBox:hover {
+    border: 1px solid #d1d5db;
+}
+
+/* ── Buttons ─────────────────────────────────────────── */
+QPushButton {
+    background-color: #ffffff;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+}
+
+QPushButton:pressed {
+    background-color: #e5e7eb;
+}
+
+/* Primary Button (Start) */
+QPushButton#primary_btn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #3b82f6, stop:1 #2563eb);
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+QPushButton#primary_btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #60a5fa, stop:1 #3b82f6);
+}
+
+QPushButton#primary_btn:disabled {
+    background: #bfdbfe;
+    color: #eff6ff;
+}
+
+/* Danger Button (Stop) */
+QPushButton#danger_btn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ef4444, stop:1 #b91c1c);
+    color: white;
+    border: none;
+}
+
+QPushButton#danger_btn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #f87171, stop:1 #dc2626);
+}
+
+QPushButton#danger_btn:disabled {
+    background: #fecaca;
+    color: #fef2f2;
+}
+
+/* ── Table & Headers ─────────────────────────────────── */
+QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    gridline-color: transparent;
+}
+
+QHeaderView::section {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #e5e7eb;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+QTableCornerButton::section {
+    background-color: #f3f4f6;
+    border: none;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left: none;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/icons/chevron-down.svg);
+    width: 14px;
+    height: 14px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+}
+
+QSpinBox::up-arrow {
+    image: url(resources/icons/chevron-up.svg);
+    width: 12px;
+    height: 12px;
+}
+
+QSpinBox::down-arrow {
+    image: url(resources/icons/chevron-down.svg);
+    width: 12px;
+    height: 12px;
+}
+
+QTableWidget::item:selected {
+    background-color: #eff6ff;
+    color: #1e40af;
+}
+
+/* ── Progress Bar ────────────────────────────────────── */
+QProgressBar {
+    border: none;
+    border-radius: 6px;
+    background-color: #e5e7eb;
+    text-align: center;
+    color: transparent;
+    height: 12px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #3b82f6, stop:1 #60a5fa);
+    border-radius: 6px;
+}
+
+/* ── Stats Label ─────────────────────────────────────── */
+QLabel#stats_label {
+    color: #6b7280;
+    font-size: 12px;
+}
